@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Task Board</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-free-5.9.0-web/css/all.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+</head>
+
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1><img src="project1_files/images/title.png"></h1>
+            <textarea id="new-note" rows="3" required></textarea>
+            <div class="menu">
+                Date: <input type="date" id="date" required>
+                Time: <input type="time" id="time">
+                <button type="button" class="btn btn-success" id="btn-save">Save</button>
+                <button type="button" class="btn btn-primary" id="btn-reset">Reset</button>
+            </div>
+            <div id="notes"></div>
+        </div>
+    </div>
+</div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
