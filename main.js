@@ -20,12 +20,7 @@ dynTextArea();
 //buttons
 document.getElementById("btn-save").addEventListener("click", save);
 document.getElementById("btn-reset").addEventListener("click", function () { 
-    textarea.value = ""; 
-    date.value = ""; 
-    time.value = "";
-    document.getElementById("new-note").style.height = "135px";
-    document.getElementById("date").style.border = "2px solid #1705d3";
-    document.getElementById("new-note").style.border = "2px solid #1705d3"; 
+    reset();
 });
 
 //reset required onclick
@@ -91,10 +86,7 @@ function save() {
         read(localStorage.clickcount);
 
         //reset after save
-        textarea.value = "";
-        date.value = "";
-        time.value = "";
-        document.getElementById("new-note").style.height = "135px";
+        reset();
     }
 }
 
@@ -141,3 +133,13 @@ function readAll() {
     }
 }
 readAll();
+
+//reset
+function reset() {
+    textarea.value = "";
+    date.value = "";
+    time.value = "";
+    document.getElementById("new-note").style.height = "135px";
+    document.getElementById("date").style.border = "2px solid #1705d3";
+    document.getElementById("new-note").style.border = "2px solid #1705d3"; 
+}
