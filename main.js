@@ -23,6 +23,7 @@ document.getElementById("btn-reset").addEventListener("click", function () {
     textarea.value = ""; 
     date.value = ""; 
     time.value = "";
+    document.getElementById("new-note").style.height = "135px";
     document.getElementById("date").style.border = "2px solid #1705d3";
     document.getElementById("new-note").style.border = "2px solid #1705d3"; 
 });
