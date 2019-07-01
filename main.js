@@ -19,9 +19,7 @@ dynTextArea();
 
 //buttons
 document.getElementById("btn-save").addEventListener("click", save);
-document.getElementById("btn-reset").addEventListener("click", function () { 
-    reset();
-});
+document.getElementById("btn-reset").addEventListener("click", reset);
 
 //reset required onclick
 document.getElementById("date").onclick = function () {
