@@ -48,7 +48,7 @@ function save() {
         //required allert popup
         function tempAlert(msg, duration) {
             var el = document.createElement("div");
-            el.setAttribute("style", "position:absolute;top:20%;left:42%;background-color:white; border:2px solid #ff3333; padding: 20px; border-radius: 5px; font-size:20px;");
+            el.setAttribute("style", "position:absolute;top:20%;left:42%;background-color:BlanchedAlmond; border:2px solid #ff3333; padding: 20px; border-radius: 5px; font-size:20px; color:red;");
             el.innerHTML = msg;
             setTimeout(function () {
                 el.parentNode.removeChild(el);
